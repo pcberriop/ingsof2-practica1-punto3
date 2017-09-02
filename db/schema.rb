@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170902040419) do
+ActiveRecord::Schema.define(version: 20170902044526) do
 
   create_table "cars", force: :cascade do |t|
     t.string "owner"
@@ -28,6 +28,32 @@ ActiveRecord::Schema.define(version: 20170902040419) do
     t.string "color"
     t.string "size"
     t.string "price"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "estudiantes", force: :cascade do |t|
+    t.string "nombre"
+    t.string "nota_uno"
+    t.string "nota_dos"
+    t.string "definitiva"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "mascota", force: :cascade do |t|
+    t.string "nombre"
+    t.string "tipo"
+    t.string "raza"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "peliculas", force: :cascade do |t|
+    t.string "name"
+    t.string "director"
+    t.string "genero"
+    t.string "año"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

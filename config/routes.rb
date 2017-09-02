@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :mascota
+  resources :estudiantes
+  resources :peliculas
   resources :room_networks
   resources :clothes
   resources :cars
