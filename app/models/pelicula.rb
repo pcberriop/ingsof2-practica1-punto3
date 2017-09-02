@@ -5,3 +5,4 @@ class Pelicula < ApplicationRecord
     validates :año, presence: true, length: { maximum: 20}
     
 end
+    
